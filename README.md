@@ -12,3 +12,5 @@ The interpreted code can be visualized through an included GUI that allows the u
 
 Several example files have been included but any user can create a new program in a .txt file and see their "bugs" come to life by following the BNF rules of the Bugs language, described in the above link.
 
+In order to run the program, simply download the source code and the example Bugs text files or write your own text file to be Interpreted. Run the BugsGui.java file which will open the user interface. Follow the directions to load a Bugs text file into the program and use the buttons and sliders to start, pause, and step the animation at various speeds. 
+
