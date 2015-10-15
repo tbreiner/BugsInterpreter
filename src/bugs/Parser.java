@@ -9,7 +9,7 @@ import java.util.*;
 import tree.Tree;
 
 /**
- * Parser for numeric expressions. Used as starter code for
+ * Parser for numeric expressions. Written from starter code for
  * the Bugs language parser in CIT594, Spring 2015.
  * 
  * @author Dave Matuszek and Theresa Breiner

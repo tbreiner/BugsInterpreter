@@ -8,12 +8,22 @@ import java.util.ArrayList;
 import javax.swing.JPanel;
 import javax.swing.Timer;
 
+/**
+ * View to display the animation of the Bugs.
+ * @author theresabreiner
+ *
+ */
 public class View extends JPanel {
 	private static final long serialVersionUID = 1L;
 	Interpreter interpreter;
 	double xScale, yScale;
 	Timer timer;
 	
+	/**
+	 * Constructor that links this View object to the given Interpreter.
+	 * Repaints the View to show updates from Interpreter
+	 * @param i
+	 */
 	public View(Interpreter i) {
 		interpreter = i;
 		timer = new Timer(40, new ActionListener() {
@@ -25,14 +35,25 @@ public class View extends JPanel {
 		timer.start();
 	}
 	
+	/**
+	 * Method to adjust the x scale of the View
+	 * @param s New scale to be used
+	 */
 	public void setXScale(double s) {
 		xScale = s;
 	}
 	
+	/**
+	 * Method to adjust the y scale of the View
+	 * @param s New scale to be used
+	 */
 	public void setYScale(double s) {
 		yScale = s;
 	}
 	
+	/* (non-Javadoc)
+	 * @see javax.swing.JComponent#paint(java.awt.Graphics)
+	 */
 	public void paint(Graphics g) {
 		super.paint(g);
 		@SuppressWarnings("unchecked")
@@ -79,6 +100,11 @@ public class View extends JPanel {
 	    return distance * Math.sin(-radians);
 	}
 	
+	/**
+	 * Helper method to draw the given bug on the display at the appropriate coordinates.
+	 * @param g Graphics object being used for display
+	 * @param b Bug object to be drawn
+	 */
 	private void drawBug(Graphics g, Bug b) {
 		g.setColor(b.getColor());
 		double x = b.getX();
