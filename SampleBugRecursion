@@ -1,0 +1,21 @@
+Bug TestRecursion {
+
+    x = 0
+    y = 50
+    color black
+    do drawJaggedLine(100, 0)
+
+    define drawJaggedLine using dist, dir {
+        turnto dir
+        switch {
+            case dist < 2
+                move dist
+            case dist >= 2
+                do drawJaggedLine(dist / 3, dir)
+                do drawJaggedLine(dist / 3, dir + 60)
+                do drawJaggedLine(dist / 3, dir - 60)
+                do drawJaggedLine(dist / 3, dir)
+        }
+        return 0
+    }
+}
