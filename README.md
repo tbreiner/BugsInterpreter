@@ -10,7 +10,7 @@ This project was created by completing several assignments by David Matuszek at 
 
 The interpreted code can be visualized through an included GUI that allows the user to select an input .txt file containing plain text code in the Bugs language, and then allows the user to interact with the code's output images in various ways.
 
-Several example files have been included but any user can create a new program in a .txt file and see their "bugs" come to life by following the BNF rules of the Bugs language, described in the above link.
+Several example files have been included (redAndBlueBugs.txt, rainbowBug.txt, octagonBug.txt, SampleBugRecursion.txt) but any user can create a new program in a .txt file and see their "bugs" come to life by following the BNF rules of the Bugs language, described in the above link.
 
 In order to run the program, simply download the source code and the example Bugs text files or write your own text file to be Interpreted. Run the BugsGui.java file which will open the user interface. Follow the directions to load a Bugs text file into the program and use the buttons and sliders to start, pause, and step the animation at various speeds.
 
